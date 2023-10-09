@@ -1,0 +1,71 @@
+// PROBLEM 1
+ALGORITHM distinct_element
+declarations
+FUNCTION summing(sum:INTEGER):INTEGER;
+PROCEDURE run(VAR i,j,k,n: INTEGER,VAR set1,set2: ARRAY_OF INTEGER[length];);
+// calculating distinct elts sum function
+FUNCTION sum(sum:INTEGER) : INTEGER;
+BEGIN
+    sum:=sum+1
+    RETURN sum ;
+END
+// running tabs procedure
+PROCEDURE run(VAR i,j,k,n: INTEGER,VAR set1,set2: ARRAY_OF INTEGER[length]);
+VAR
+    i,j,k,n: INTEGER;
+    set1,set2: ARRAY_OF INTEGER[length];
+BEGIN
+    k:=0
+    FOR k FROM 0 TO n-1 STEP step1  DO
+        write ('give set1[i]');
+        write ('give set2[j]');
+    END_FOR
+END
+// main algorithm
+BEGIN
+    sum:=0
+    i:=0
+    j:=0
+    k:=0
+    FOR k FROM 0 TO n-1 STEP step1  DO
+            IF (set1[i]<>set2[j]) THEN
+                sum:=summing(sum);
+            write sum;
+            ELSE
+                write run(sum);
+            END_IF
+    END_FOR
+    // PROBLEM 2
+    ALGORITHM Dot product
+declarations
+    FUNCTION dot_product(ps,i,j:INTEGER V1,V2: ARRAY_OF INTEGER[3]): INTEGER;
+    // calculating ps function
+    FUNCTION dot_product(ps,i,j:INTEGER V1,V2: ARRAY_OF INTEGER[3]): INTEGER;
+    BEGIN
+        ps:=0
+        ps:=ps+V1[i]*V2[j];
+        RETURN ps ;
+    END
+    // main algorithm
+    VAR
+    product: INTEGER;
+    i,j:INTEGER;
+    V1,V2: ARRAY_OF INTEGER[3];
+    BEGIN
+    product:=0
+    i:=0
+    j:=0
+    FOR i FROM 0 TO 2 STEP step1  DO
+    write ('V1[i]');
+    write ('V2[j]');
+    END_FOR
+    WHILE (ps(product)) DO
+    IF (ps(product):=0) THEN
+    write ('vectors are orthogonal')
+    ELSE
+    write ('vectors are not orthogonal product is ')
+    write (product)
+    END_IF
+    END
+
+
