@@ -1,6 +1,6 @@
 // PROBLEM 1
 ALGORITHM distinct_element
-declarations
+// declarations
 FUNCTION summing(sum:INTEGER):INTEGER;
 PROCEDURE run(VAR i,j,k,n: INTEGER,VAR set1,set2: ARRAY_OF INTEGER[length];);
 // calculating distinct elts sum function
@@ -37,9 +37,9 @@ BEGIN
     END_FOR
     // PROBLEM 2
     ALGORITHM Dot product
-declarations
+// declarations
     FUNCTION dot_product(ps,i,j:INTEGER V1,V2: ARRAY_OF INTEGER[3]): INTEGER;
-    // calculating ps function
+    // calculating dot product of two vectors
     FUNCTION dot_product(ps,i,j:INTEGER V1,V2: ARRAY_OF INTEGER[3]): INTEGER;
     BEGIN
         ps:=0
@@ -55,18 +55,21 @@ declarations
     product:=0
     i:=0
     j:=0
+    // Initialize vectors V1 and V2 with values
     FOR i FROM 0 TO 2 STEP step1  DO
     write ('V1[i]');
     write ('V2[j]');
-    dot_product(procedure)
-    END_FOR
+    // Calculate the dot product
+    dot_product(product)
+    // checking if two vectors are orthogonal
     WHILE (dot_product(product)) DO
-    IF (ps(product):=0) THEN
+    IF (dot_product(product):=0) THEN
     write ('vectors are orthogonal')
     ELSE
-    write ('vectors are not orthogonal product is ')
-    write (product)
+    write ('vectors are not orthogonal product is ', product)
     END_IF
+    END_WHILE
+    END_FOR
     END
 
 
