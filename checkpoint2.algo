@@ -58,8 +58,9 @@ declarations
     FOR i FROM 0 TO 2 STEP step1  DO
     write ('V1[i]');
     write ('V2[j]');
+    dot_product(procedure)
     END_FOR
-    WHILE (ps(product)) DO
+    WHILE (dot_product(product)) DO
     IF (ps(product):=0) THEN
     write ('vectors are orthogonal')
     ELSE
